@@ -1,0 +1,20 @@
+name: BetterSpectator
+main: me.zabzabdoda.BetterSpectator.BetterSpectator
+version: 1.0
+api-version: 1.15
+author: zabzabdoda
+description: Spectator plugin
+commands:
+  bs:
+    description: Main command for chat.
+    usage: |
+           /bs view <player>
+           Example: /bs view zabzabdoda - shows you zabzabdoda's inventory 
+permissions:
+    bs.*:
+        description: Gives access to all better spectator permissions
+        children:
+            bs.view: true
+    bs.view:
+        description: Allows you to view players inventories
+        default: op
